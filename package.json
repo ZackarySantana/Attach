@@ -25,7 +25,6 @@
         "express": "^4.18.1",
         "helmet": "^5.1.1",
         "node-cron": "^3.0.2",
-        "solid-js": "^1.4.7",
-        "solid-markdown": "^1.2.0"
+        "solid-js": "^1.4.7"
     }
 }
