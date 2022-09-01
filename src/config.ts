@@ -25,10 +25,10 @@ export const colors = getRandomTheme();
 export const random_theme_button = true;
 
 export const base_profile = {
-    first_name: "Zackary",
-    last_name: "Santana",
-    subtitle: "Software Engineer, Fullstack",
-    bio: ["MongoDB", "Miami, FL", "Florida International University"],
+    first_name: "John",
+    last_name: "Doe",
+    subtitle: "Aspiring Software Developer",
+    bio: ["Miami, FL", "Florida International University"],
     name() {
         return this.first_name + " " + this.last_name;
     },
@@ -36,32 +36,35 @@ export const base_profile = {
 
 export const extended_profile = {
     gender: "Male", // You can input any gender
-    username: "LidTop", // You can opt out my commenting either of these
+    username: "Cobra", // You can opt out my commenting either of these
 } as ExtendedProfile;
 
 export const skillsList = [
-    "TypeScript",
-    "React.js",
-    "Express.js",
-    "Remix.js",
-    "Solid.js",
-    "Node.js",
-    "Preact.js",
-    "Tailwind",
-    "Fresh",
-    "Deno",
-    "Twind",
-    "Java",
-    "Svelte",
-    "Firebase",
-    "Splunk",
-    "MongoDB",
-    "MySQL",
-    "Docker",
-    "Golang",
-    "Fly",
-    "Prometheus",
-    "Grafana",
+    "Time management",
+    "Communication",
+    "Adaptability",
+    "Problem-solving",
+    "Teamwork",
+    "Creativity",
+    "Leadership",
+    "Interpersonal skills",
+    "Work ethic",
+    "Attention to detail",
+    "Stress management",
+    "Organization",
+    "Prioritizing",
+    "Planning",
+    "Goal setting",
+    "Verbal communication",
+    "Written communication",
+    "Presentation",
+    "Constructive feedback",
+    "Active listening",
+    "Self-management",
+    "Optimism",
+    "Calmness",
+    "Analysis",
+    "Self-motivation",
 ];
 
 /**
@@ -76,83 +79,80 @@ There are no required links, but each link must have:
  If no icon is supplied, it will use a chain icon by default
  If no content is supplied, it will use the url by default
  */
-const projects_list = [
+const projects_linksList = [
     {
-        url: "https://zackaryjamessantana.com/",
-        icon: "/icons/portfolio.svg",
+        url: "https://google.com",
         title: "Portfolio",
+        content: "By default, content is the url (view next to continue)",
     },
     {
-        url: "https://todo.zackaryjamessantana.com/",
-        icon: "/icons/todo.svg",
-        title: "Todo",
+        url: "https://google.com",
+        title: "Todo App",
+        content: "but you can force content by specifying like this!",
     },
     {
-        url: "https://twitterst.fly.dev/",
-        title: "Twitter Filter",
+        url: "https://google.com",
+        title: "And more!",
     },
 ] as Link[];
 
 const experiences = [
     {
-        company: "MongoDB",
+        company: "Company X",
         meta: [
             "Software Engineer Intern",
             "Jun 2022 - Aug 2022",
-            "New York, New York",
+            "Space, Space",
         ],
-        icon: "/icons/mongodb.svg",
         desc: [
-            "Worked on a scrum (agile) team for MongoDB's internal CI/CD testing tool, Evergreen (https://github.com/evergreen-ci/evergreen).",
-            "Used Golang to create new REST endpoints, manage existing ones, and create middleware.",
-            "Augmented the CLI to allow users to do actions that were previously restricted like using regex to find what tests to do on which builds and run that test-suite.",
-            "Modified core infrastructure of archiving tests and scheduling/restarting logic of tests.",
-            "Created new functionality that restarts a subset of tests for the user and systematically keeps track of non-restarted and restarted tests for the same test-suite.",
+            "Did many things to improve the company",
+            "Hired a private inspector",
+            "Became superman!",
         ],
     },
     {
-        company: "MetLife",
+        company: "Company Y",
         meta: [
             "Software Engineer Intern",
             "Jun 2021 - Aug 2021",
-            "Cary, North Carolina",
+            "Space, Space",
         ],
-        icon: "/icons/metlife.png",
         desc: [
-            "Managed and maintained a frontend Angular.js application that displayed real-time information that was vital for the team.",
-            "Organized the backend Restify that interacted with a MongoDB that used endpoints to test status of Java Virtual Machines.",
-            "Worked in a SAFe Agile team that used scrum to keep track with the day-to-day process.",
+            "Did many things to improve the company",
+            "Hired a private inspector",
+            "Became superman!",
         ],
     },
 ] as Experience[];
 
-const games_list = [
+const games_linksList = [
     {
-        url: "https://zackaryjamessantana.com/hosted_projects/rpg.html",
-        title: "RPG",
+        url: "https://google.com",
+        title: "Game 1",
     },
     {
-        url: "https://videos.zackaryjamessantana.com/spacefrontier/",
-        title: "Space Frontier",
+        url: "https://google.com",
+        title: "Game 2",
+        content: "But I have more!",
     },
 ] as Link[];
 
-const contactme_list = [
+const contactMe_linksList = [
     {
-        url: "https://www.linkedin.com/in/zackary-santana/",
+        url: "https://www.linkedin.com/in/",
         icon: "/icons/linkedin.svg",
         title: "LinkedIn",
     },
     {
-        url: "https://github.com/ZackarySantana/",
+        url: "https://github.com/",
         icon: "/icons/github.svg",
         title: "GitHub",
     },
     {
-        url: "mailto: zsant014@fiu.edu",
+        url: "mailto: someone@gmail.com",
         title: "Email",
         icon: "/icons/email.svg",
-        content: "zsant014@fiu.edu",
+        content: "someone@gmail.com",
     },
 ] as Link[];
 
@@ -161,30 +161,29 @@ const contactme_list = [
  */
 export const sections = {
     // An example of a button. This button is a resume download
-    "📝 Resume": {
-        url: "/Resume.pdf",
+    Resume: {
+        url: "/Resume.docx",
         download_name: `${base_profile.name()}_Resume.pdf`,
     },
     // An example of a list of projects, that is opened on load
-    "🕸️ Projects": {
-        links: projects_list,
+    Projects: {
+        links: projects_linksList,
         default_opened: true,
     },
     // An example of an experience section
-    "💼 Work Experience": {
+    "Work Experience": {
         experiences: experiences,
     },
-    "🧠 Games": {
-        links: games_list,
+    Games: {
+        links: games_linksList,
     },
-    "📧 Contact Me": {
-        links: contactme_list,
+    "Contact Me": {
+        links: contactMe_linksList,
     },
-    "Page Stats": true,
 } as Sections;
 
 export const webpage_config = {
     title: `${base_profile.name()}'s |attach|`,
-    desc: `${base_profile.name()}'s projects, work experience, games, contact info, and more! Click to get in contact!`,
+    desc: `An |attach| for ${base_profile.name()}`,
     keywords: `New Grad, Portfolio, Projects, Developer, Coder, Programmer, Programming, Languages, Software, ${base_profile.name()}`,
 };
