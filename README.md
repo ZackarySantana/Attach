@@ -47,8 +47,10 @@ npm install
 Setup your volume (this is so your stats can be persistent!)
 
 ```
-fly volumes create stats_data
+fly volumes create stats_data -s 1
 ```
+
+The "-s 1" stands for 1gb, the free version of fly only allows for 1g space but that's more than enough.
 
 And deploy to the web with
 
