@@ -113,7 +113,7 @@ To install:
 
 -   [Git](https://git-scm.com/) (Installation)
 -   [Visual Studio Code](https://code.visualstudio.com/) (Recommended code editor)
--   [Node](https://nodejs.org/en/) v18.4.0
+-   [Node](https://nodejs.org/en/) v18.4.0 (Only for local development)
 -   NPM v8.12.1 (comes with Node!)
 -   [Flyctl](https://fly.io/docs/speedrun/) (Deployment)
 
