@@ -58,6 +58,14 @@ And deploy to the web with
 fly launch
 ```
 
+If you have already deployed it once, run
+
+```
+fly deploy
+```
+
+If either command fails, just run it again or message me for help!
+
 For more info on deploying, head to [deploy with fly](#fly)
 
 ## Development
