@@ -105,7 +105,7 @@ To install:
 -   [Visual Studio Code](https://code.visualstudio.com/) (Recommended code editor)
 -   [Node](https://nodejs.org/en/) v18.4.0
 -   NPM v8.12.1 (comes with Node!)
--   [Flyctl](https://fly.io/docs/speedrun/) (Deployment, only steps 1 and 2)
+-   [Flyctl](https://fly.io/docs/speedrun/) (Deployment)
 
 If you have a mac, I recommend you install [homebrew](https://brew.sh/) and then run the following to install everything:
 
